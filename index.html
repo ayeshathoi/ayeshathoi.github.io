@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
 
     <meta charset="utf-8">
@@ -11,7 +10,8 @@
     <link rel="shortcut icon" href="img/Profile Pictures/favicon.ico" type="image/x-icon">
 
     <title>Ayesha Binte Mostofa</title>
-
+    <!-- Bootstrap CSS -->
+    
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -84,21 +84,13 @@
             <a class="nav-link js-scroll-trigger" href="#leadership">Leadership Activities</a>
           </li>
 
-          
-  
-
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#gallery">Personal Interests</a>
           </li>
-
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li> -->
-
-          
-          
         </ul>
-      </div>
+        </div>
+        <img src="icons/moons.png" style="width: 30px; height: 30px;" id="icon" onclick="toggleDarkMode()" alt="Dark Mode">
+      
     </nav>
 
     <div class="container-fluid p-0">
@@ -1032,7 +1024,17 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/resume.js"></script>
     <script src="vendor/typed/typed.js"></script>
-    
+    <script>
+      var icon = document.getElementById("icon"); 
+      icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+          icon.src = "icons/sun.png";
+        }else{
+          icon.src = "icons/moons.png";
+        }
+      }
+    </script>
   </body>
 
 </html>
