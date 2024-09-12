@@ -512,7 +512,6 @@ main {
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
-  /* background same as background color mostly */
   background-color: var(--eerie-black-2);
   color: white;
   font-size: var(--fs-6);
