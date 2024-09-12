@@ -58,21 +58,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-
-
-// read yaml files from socials.yaml using js-yaml cdn library
-fetch('./resume/data/personal.yml')
-  .then(response => response.text())
-  .then(data => {
-    const intro = jsyaml.load(data);
-    console.log(intro.personal);
-    intro.personal.profiles.forEach(social => {
-      document.querySelector('.social-list')
-        .innerHTML +=
-        `<li class="social-item">
-          <a href="${social.url}" class="social-link">
-            <ion-icon name="${social.icon}"></ion-icon>
-          </a>
-        </li>`;
-    });
-  });
