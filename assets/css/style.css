@@ -1994,7 +1994,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .projects-list {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-columns: 1fr; /* Two columns */
   gap: 30px;
   margin-bottom: 10px;
 }
