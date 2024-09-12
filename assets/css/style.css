@@ -1007,7 +1007,7 @@ main {
 
 .project-list {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-columns: 1fr;
   gap: 30px;
   margin-bottom: 10px;
 }
