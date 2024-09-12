@@ -512,7 +512,9 @@ main {
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
-  color: var(--light-gray);
+  /* background black */
+  background-color: #010409;
+  color: white;
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
