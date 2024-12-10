@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayesha Binte Mostofa</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/img/Profile Pictures/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Import element definition and auto-register -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>   
+    function loadPage(divloc, page) {
+      //console.log(page);
+      $.get(page, function(data){
+          //console.log(divloc);
+          $(divloc).empty();
+          $(divloc).html(data);
+      });
+    }
+    $(document).ready(function(){
+            $('.load').trigger("click");
+    });
+</script>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/img/Profile Pictures/Profile_Picture.jpg" alt="Ayesha Binte Mostofa" width="20%">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ayesha Binte Mostofa">Ayesha Binte Mostofa</h1>
+          <p class="title">Lecturer <br> @ CUB</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="separator"></div>
+      <div class="info-content" >
+        <button class="form-btn" type="submit" data-form-btn onclick="window.open('./files/Academic_Resume_Ayesha.pdf', '_blank')" style="margin: auto;">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <span>Academic CV</span>
+        </button>
+      </div>
+      
+      <div class="sidebar-info_more">
+
+        <div class="separator"><!--separator-->></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/ayesha-binte-mostofa/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/ayeshathoi" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/channel/UCLj24fWiGPJxcV11Vq8fH4g" target="_blank" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?hl=en&user=6Hwk6jcAAAAJ" target="_blank" class="social-link">
+              <!-- This is for google scholar -->
+               <ion-icon name="logo-google"></ion-icon> 
+            </a>
+            </li>
+        </ul>
+
+
+        <div class="separator"></div>
+        
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ayeshaathoi62@gmail.com" class="contact-link">ayeshaathoi62@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Dhaka, Bangladesh</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <!-- <li class="navbar-item"> 
+            <button class="navbar-link" data-nav-link>Leadership</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <!--
+        - #RESUME
+      -->
+
+
+      <article class="about active" data-page="about">
+        <div id="about" class="load" onclick="loadPage('#loadabout', 'pages/about.html')"> </div>
+        <div id="loadabout"> </div>
+      </article>
+
+      <article class="resume" data-page="resume">
+        <div id="resume" class="load" onclick="loadPage('#loadresume', 'pages/resume.html')"> </div>
+        <div id="loadresume"> </div>
+      </article>
+      
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="research">
+        <div class="load" onclick="loadPage('#loadblog', 'pages/research.html')"> </div>
+        <div id="loadblog"> </div>
+      </article>
+      
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+        <div class="load" onclick="loadPage('#loadportfolio', 'pages/projects.html')"> </div>
+        <div id="loadportfolio"> </div>
+      </article>
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+        <div class="load" onclick="loadPage('#loadcontact', 'pages/contact.html')"> </div>
+        <div id="loadcontact"> </div>
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+
+</body>
+
+</html>

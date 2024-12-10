@@ -1,0 +1,168 @@
+<div>
+  <header>
+    <h2 class="h2 article-title">Research</h2>
+  </header>
+
+  <section class="blog-posts">
+
+    <ul class="blog-posts-list">
+
+      <li class="blog-post-item">
+        <!-- <a href="#"> -->
+
+          <figure class="blog-banner-box">
+            <img src="./assets/img/Research/Thesis.png" alt="Thesis">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">NLP X SWE</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2023-07-1">July 2023 - Nov 2024</time>
+            </div>
+
+            <h4 class="blog-item-title" style="color: white;">Advancing Code Review and Code Refinement Automation Using Large Language Models</h4>
+
+            <p class="blog-text">
+              Undergraduate Thesis, NLP Group, CSE-BUET <br>
+
+              Supervisors : 
+              <a href="https://scholar.google.com/citations?user=jAuiNFgAAAAJ&hl=en">Dr. Anindya Iqbal(Professor, BUET-CSE)</a>
+              <a href="https://toufiqueparag.github.io/toufique.github.io/">Dr. Toufique Ahmed (PostDoc, UC Davis)</a>
+              Research Grant @ RISE - BUET <br>
+              <!-- <a href="https://www.researchgate.net/publication/382224024_Advancing_Automatic_Code_Review_and_Code_Refinement_Generation_Using_Large_Language_Models">Abstract</a> -->
+              Paper is under review at <a href="https://2025.msrconf.org/">Mining Software Repositories (MSR) 2025</a> <br>
+              Read the preprint:  <a href="https://arxiv.org/abs/2411.10129">[arXiv]</a>
+
+              
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="blog-post-item">
+        <!-- <a href="#"> -->
+
+          <!-- <figure class="blog-banner-box">
+            <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer">
+          </figure> -->
+
+          <div class="blog-content">
+
+            <!-- <div class="blog-meta">
+              <p class="blog-category">Design</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2022-02-23">Fab 23, 2022</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">Best fonts every designer</h3> -->
+
+            <p class="blog-text">
+              We studied the efficacy of language models, in automating code review and code refinement activities using few-shot prompting and Parameter-efficient Fine-tuning. <br><br>
+              We augmented static program metadata (function call graph) and natural language summary (produced with codeT5-base) with human evaluation to improve code review and code refinement generation tasks. Few-shot examples are retrieved from the training dataset using BM-25 ranking algorithm. <br><br>
+              We used GPT-4o, GPT-3.5-turbo, Gemini-1.0-pro for prompt engineering and Llama-3, Code-Llama for fine-tuning. We collected the data from the Codereviewer dataset of Microsoft Research. <br><br>
+              We were able to surpass state-of-the-art pretrained model CodeReviewer by achieving over 90% BLEU in this task. 
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="blog-post-item">
+        <!-- <a href="#"> -->
+
+          <figure class="blog-banner-box">
+            <img src="./assets/img/Research/security.png" alt="NLP X Security">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">NLP X Systems Security</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2024-02-1">Feb 2024 - Present</time>
+            </div>
+
+            <h4 class="blog-item-title" style="color: white;">Detecting Attack Behavior in Computer Logs utilizing LLMs</h4>
+
+            <p class="blog-text">
+              Supervisors : 
+              <a href="https://scholar.google.com/citations?user=y89HApwAAAAJ&hl=en">Dr. Md. Shohrab Hossain (Professor, CSE, BUET)</a>
+              <a href="https://scholar.google.ca/citations?user=cXS5b4sAAAAJ&hl=en">Dr. Shahrear Iqbal (Research Officer, National Research Council, Canada)</a>
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="blog-post-item">
+          <div class="blog-content">
+            <p class="blog-text">
+              Currently, We are investigating the prediction accuracy of Large Language Models (LLMs) in detecting attack behaviors within computer system logs. <br><br>
+              Our approach involves constructing provenance graphs and reverse trees (children-to-parent relationships). Subsequently, we generated event traces and then classified them. 
+              We labeled the data as either benign or malicious, aiming to supervise LLMs for precise detection of 
+              attack behavior.<br><br>
+              The logs used in this study are sourced from the DARPA OPTC and DARPA TC E3 datasets and are structured within a PostgreSQL database.
+             </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="blog-post-item">
+        <!-- <a href="#"> -->
+
+          <figure class="blog-banner-box">
+            <img src="./assets/img/Research/image_style.png" alt="image-style">
+          </figure>
+
+          <div class="blog-content">
+
+            <div class="blog-meta">
+              <p class="blog-category">CV</p>
+
+              <span class="dot"></span>
+
+              <time datetime="2023-07-1">Jan 2024 - Present</time>
+            </div>
+
+            <h4 class="blog-item-title" style="color: white;">Low Resource 2D Image Style Transfer</h4>
+
+            <p class="blog-text">
+              Supervisor :
+              <a href="https://scholar.google.com/citations?user=Pwsti-YAAAAJ&hl=en">Sheikh Azizul Hakim (Lecturer, CSE, BUET)</a>
+            </p>
+          </div>
+
+        </a>
+      </li>
+
+      <li class="blog-post-item">
+          <div class="blog-content">
+
+            <p class="blog-text">
+              We generate a new image by combining the content of one image with the style of another image with minimal computational resource usage. We utilized Neural style transfer models : VGG16 and ResNet-50 and GAN model : CycleGAN. <br><br>
+              We extract features and calculate style loss and content loss. Then we calculate perceptual loss from the weighted sum of Style loss and content loss. In defining our loss functions according to our content and style image shapes, we utilized the Gram Matrix and  FID, SSIM, and PSNR as evaluation metrics. <br><br>
+              Now, we are trying to transfer the style of calligraphy to a text image.
+            </p>
+          </div>
+
+        </a>
+      </li>
+    </ul>
+
+  </section>
+
+</div>

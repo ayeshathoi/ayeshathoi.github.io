@@ -1,0 +1,170 @@
+<div>
+  <header>
+    <h2 class="h2 article-title">About me</h2>
+  </header>
+
+  <section class="about-text">
+    <zero-md src="pages/aboutme.md"></zero-md>
+  </section>
+
+  <!--
+    - service
+  -->
+
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="newspaper-outline"></ion-icon>
+      </div>
+  
+      <h3 class="h3" id="ts" data-dropdown-item>News and Updates</h3>
+    </div>
+  
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">July 16, 2024</h4>
+        <p class="timeline-text">Recieved offer letter and joined Canadian University of Bangladesh as a Lecturer in Computer Science and Engineering</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">July 01, 2024</h4>
+        <p class="timeline-text">Graduated from BUET, last semester result 4.00/4.00</p>
+      </li>
+      <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">June 13, 2024</h4>
+      <p class="timeline-text">Documented all my lab coursework including projects in a webpage. 
+        <a href="https://ayeshathoi.github.io/ugrad.html" target="_blank">View Webpage</a>
+      </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Dec 09, 2023</h4>
+        <p class="timeline-text">Awarded with RISE-BUET Internal Student Research Grant 2023 for undergraduate thesis project.</p>
+      </li>
+      
+      
+    </ol>
+  </section>
+  <!-- <section class="service">
+
+    <h3 class="h3 service-title">News and Updates</h3>
+    <ul>
+      <li class="service-item">
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Graduated from BUET</h4>
+          <p class="service-item-text">
+            Graduated from BUET on 1st July, 2024. Last Semester GPA : 4.00/4.00
+          </p>
+        </div>
+
+      </li>
+
+      <li class="service-item">
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Landed First Job Offer</h4>
+          <p class="service-item-text">
+            Joined Canadian University of Bangladesh as a full-time lecturer in the CSE department on 16th July, 2024.
+          </p>
+        </div>
+
+    </ul> -->
+
+
+
+
+    <!-- <ul class="service-list">
+
+      <li class="service-item">
+
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-design.svg
+          " alt="design icon" width="40">
+        </div>
+
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Large Scale design</h4>
+
+          <p class="service-item-text">
+            Large Scale System Design using Microservices Architecture.
+          </p>
+        </div>
+
+      </li>
+
+      <li class="service-item">
+
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+        </div>
+
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Web development</h4>
+
+          <p class="service-item-text">
+            High-quality development of sites at the professional level.
+          </p>
+        </div>
+
+      </li>
+
+      <li class="service-item">
+
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+        </div>
+
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Mobile apps</h4>
+
+          <p class="service-item-text">
+            Professional development of applications for iOS and Android.
+          </p>
+        </div>
+
+      </li>
+
+    </ul> -->
+
+  </section>
+</div>
+
+<script>
+
+// testimonials variables
+const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+const modalContainer = document.querySelector("[data-modal-container]");
+const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
+const overlay = document.querySelector("[data-overlay]");
+
+// modal variable
+const modalImg = document.querySelector("[data-modal-img]");
+const modalTitle = document.querySelector("[data-modal-title]");
+const modalText = document.querySelector("[data-modal-text]");
+
+// modal toggle function
+const testimonialsModalFunc = function () {
+  modalContainer.classList.toggle("active");
+  overlay.classList.toggle("active");
+}
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItem.length; i++) {
+
+  testimonialsItem[i].addEventListener("click", function () {
+
+    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+
+    testimonialsModalFunc();
+
+  });
+
+}
+
+  // add click event to modal close button
+modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+overlay.addEventListener("click", testimonialsModalFunc);
+
+</script>
+
