@@ -10,8 +10,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/site.css">
+<script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
+<div class="theme-toggle" role="group" aria-label="Color theme"><button type="button" data-t="light" aria-pressed="false">Light</button><button type="button" data-t="auto" aria-pressed="true">Auto</button><button type="button" data-t="dark" aria-pressed="false">Dark</button></div>
+<script>
+(function(){
+  var root=document.documentElement,btns=document.querySelectorAll('.theme-toggle button');
+  function mark(t){btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.t===t?'true':'false')})}
+  var cur='auto';try{var s=localStorage.getItem('theme');if(s==='light'||s==='dark')cur=s}catch(e){}
+  mark(cur);
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    var t=b.dataset.t;
+    if(t==='auto')root.removeAttribute('data-theme');else root.setAttribute('data-theme',t);
+    try{if(t==='auto')localStorage.removeItem('theme');else localStorage.setItem('theme',t)}catch(e){}
+    mark(t);
+  })});
+})();
+</script>
 <div class="wrap">
 
 <aside>
