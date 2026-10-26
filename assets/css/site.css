@@ -98,3 +98,8 @@ details li{margin:2px 0}
 .theme-toggle button[aria-pressed="true"]{background:var(--accent);color:var(--bg)}
 .theme-toggle button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 @media print{.theme-toggle{display:none}}
+
+.sub{font-family:Inter,system-ui,sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:22px 0 10px}
+#beyond .sub:first-of-type{margin-top:0}
+.interests{margin-bottom:0}
+.interests .card p{font-size:.92rem}
