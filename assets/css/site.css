@@ -117,3 +117,13 @@ nav.top{align-items:center}
 
 nav.top{flex-wrap:nowrap;justify-content:space-between;gap:12px}
 .navlinks{display:flex;flex-wrap:wrap;gap:6px 16px}
+
+.figs{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px}
+.fig{display:block;width:132px;color:var(--muted);font-size:.8rem;line-height:1.35}
+.fig:hover{text-decoration:none;color:var(--accent)}
+.fig img{width:132px;height:92px;object-fit:cover;border:1px solid var(--line);border-radius:6px;background:#fff;display:block;margin-bottom:6px}
+.fig span{display:block}
+.media{margin-top:12px;max-width:360px;aspect-ratio:16/9;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--tag)}
+.media iframe{width:100%;height:100%;border:0;display:block}
+
+.figcap{margin-top:6px;font-size:.8rem}
