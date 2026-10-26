@@ -123,12 +123,15 @@
 
 <section id="projects">
   <h2>Projects</h2>
-  <div class="pgrid">
-    <article class="pcard"><img src="img/ms_projects/political_deepfake.png" alt="" loading="lazy"><div class="b"><h3>Understanding Synthetic Politics on Reddit</h3><p>Mixed-methods analysis of political deepfakes on r/politics and r/futurology, Dec 2022 to Feb 2026.</p><div class="lk"><a href="https://github.com/ayeshathoi/CS690G-Political-Deepfake-Content-Project">Code</a></div></div></article>
-    <article class="pcard"><img src="img/ms_projects/LLMComp.png" alt="" loading="lazy"><div class="b"><h3>LLMComp</h3><p>Prompt compression as a defense against LLM jailbreaks in monolingual and multilingual settings, extending SecurityLingua.</p><div class="lk"><a href="https://github.com/ayeshathoi/LLMComp">Code</a></div></div></article>
-    <article class="pcard"><img src="img/ms_projects/IAC-eval.png" alt="" loading="lazy"><div class="b"><h3>IaC-Eval replication and extension</h3><p>Extended the benchmark to 458 AWS Terraform scenarios across six difficulty levels; assessed correctness, security, and compliance of LLM-generated code.</p><div class="lk"><a href="https://github.com/ayeshathoi/IAC-eval-Replication">Code</a></div></div></article>
-    <article class="pcard"><img src="img/ms_projects/Steganography.png" alt="" loading="lazy"><div class="b"><h3>Deep Learning Network Steganography</h3><p>Hiding a complete neural network inside another network while preserving the performance of both.</p><div class="lk"><a href="https://github.com/ayeshathoi/CS682-Project/tree/second_branch">Code</a></div></div></article>
-    <article class="pcard"><img src="img/ms_projects/regex.png" alt="" loading="lazy"><div class="b"><h3>Regular Expression Game</h3><p>A gamified web application for learning regular expressions, designed for COMPSCI 250.</p><div class="lk"><a href="https://github.com/ayeshathoi/umass-cics250-regex-game">Code</a></div></div></article>
+  <div class="filters" id="pfilters" role="group" aria-label="Project type">
+    <button class="on" data-f="all">All</button><button data-f="security">Security and privacy</button><button data-f="llm">LLMs and AI</button><button data-f="software">Software and education</button>
+  </div>
+  <div class="pgrid" id="pgrid">
+    <article class="pcard" data-cat="security"><img src="img/ms_projects/political_deepfake.png" alt="" loading="lazy"><div class="b"><h3>Understanding Synthetic Politics on Reddit</h3><p>Mixed-methods analysis of political deepfakes on r/politics and r/futurology, Dec 2022 to Feb 2026.</p><div class="lk"><a href="https://github.com/ayeshathoi/CS690G-Political-Deepfake-Content-Project">Code</a></div></div></article>
+    <article class="pcard" data-cat="security llm"><img src="img/ms_projects/LLMComp.png" alt="" loading="lazy"><div class="b"><h3>LLMComp</h3><p>Prompt compression as a defense against LLM jailbreaks in monolingual and multilingual settings, extending SecurityLingua.</p><div class="lk"><a href="https://github.com/ayeshathoi/LLMComp">Code</a></div></div></article>
+    <article class="pcard" data-cat="llm"><img src="img/ms_projects/IAC-eval.png" alt="" loading="lazy"><div class="b"><h3>IaC-Eval replication and extension</h3><p>Extended the benchmark to 458 AWS Terraform scenarios across six difficulty levels; assessed correctness, security, and compliance of LLM-generated code.</p><div class="lk"><a href="https://github.com/ayeshathoi/IAC-eval-Replication">Code</a></div></div></article>
+    <article class="pcard" data-cat="security llm"><img src="img/ms_projects/Steganography.png" alt="" loading="lazy"><div class="b"><h3>Deep Learning Network Steganography</h3><p>Hiding a complete neural network inside another network while preserving the performance of both.</p><div class="lk"><a href="https://github.com/ayeshathoi/CS682-Project/tree/second_branch">Code</a></div></div></article>
+    <article class="pcard" data-cat="software"><img src="img/ms_projects/regex.png" alt="" loading="lazy"><div class="b"><h3>Regular Expression Game</h3><p>A gamified web application for learning regular expressions, designed for COMPSCI 250.</p><div class="lk"><a href="https://github.com/ayeshathoi/umass-cics250-regex-game">Code</a></div></div></article>
   </div>
   <p style="margin-top:14px"><a href="undergrad.html">Browse the 12 undergraduate projects &rarr;</a> (machine learning, systems, AI, and software development, with code, reports, and demos).</p>
 </section>
@@ -143,15 +146,25 @@
 
   <h3 class="sub">Interests</h3>
   <div class="themes interests">
-    <div class="card"><h3>Music</h3><p>Four years of training at Bangladesh Shishu Academy, Chittagong. I play the harmonium, keyboard, and kalimba, and I am learning the ukulele.</p></div>
-    <div class="card"><h3>Writing</h3><p>I write journals and stories in Bangla. One of my pieces won a prize on International Mother Language Day in 2017.</p></div>
-    <div class="card"><h3>Game development</h3><p>Built Angry Bird (C++, OpenGL), Zelda (Java, JavaFX), and SpaceWars (Python, turtle) as extracurricular projects.</p></div>
-    <div class="card"><h3>Art and design</h3><p>Doodling, drawing, Photoshop, and Adobe Illustrator.</p></div>
+    <div class="card"><h3>Music</h3><p>Four years of training at Bangladesh Shishu Academy, Chittagong. I play the harmonium, keyboard, and kalimba, and I am learning the ukulele.</p><div class="ex"><a href="https://www.youtube.com/playlist?list=PLh5_wktv4jtzmb4_urdpsycVHxDzGcp9Z">Listen to my music playlist &rarr;</a></div></div>
+    <div class="card"><h3>Writing</h3><p>I write journals and stories in Bangla. One of my pieces won a prize on International Mother Language Day in 2017.</p><div class="ex"><a href="https://drive.google.com/file/d/1yKk2vU6xeZ-jqIzu63R1tTNqYjCL0vdn/view">Read a journal piece &rarr;</a></div></div>
+    <div class="card"><h3>Game development</h3><p>Angry Bird (C++, OpenGL), Zelda (Java, JavaFX), and SpaceWars (Python, turtle).</p><div class="ex thumbs"><a href="https://github.com/ayeshathoi/AngryBird-TermProject" title="Angry Bird"><img src="assets/img/PI/Game%20Development/angry.jpg" alt="Angry Bird game" loading="lazy"></a><a href="https://github.com/ayeshathoi/Bored-Zelda" title="Zelda"><img src="assets/img/PI/Game%20Development/Zelda.png" alt="Zelda game" loading="lazy"></a><a href="https://github.com/ayeshathoi/spaceWars" title="SpaceWars"><img src="assets/img/PI/Game%20Development/spacewars.png" alt="SpaceWars game" loading="lazy"></a></div></div>
+    <div class="card"><h3>Art and design</h3><p>Doodling, drawing, Photoshop, and Adobe Illustrator.</p><div class="ex thumbs"><a href="assets/img/PI/Digital%20Art%20%26%20Pencil%20Sketch/adobe.jpg" title="Illustration"><img src="assets/img/PI/Digital%20Art%20%26%20Pencil%20Sketch/adobe.jpg" alt="Digital illustration" loading="lazy"></a><a href="assets/img/PI/Digital%20Art%20%26%20Pencil%20Sketch/photoshop.jpg" title="Photoshop"><img src="assets/img/PI/Digital%20Art%20%26%20Pencil%20Sketch/photoshop.jpg" alt="Photoshop work" loading="lazy"></a></div></div>
   </div>
 </section>
 
 <footer>&copy; 2026 Ayesha Binte Mostofa &middot; Amherst, MA, USA &middot; <a href="legacy.html">Previous version of this site</a></footer>
 </main>
 </div>
+<script>
+document.getElementById('pfilters').addEventListener('click',function(ev){
+  var b=ev.target.closest('button'); if(!b) return;
+  this.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b)});
+  document.querySelectorAll('#pgrid .pcard').forEach(function(c){
+    var on=b.dataset.f==='all'||(' '+c.dataset.cat+' ').indexOf(' '+b.dataset.f+' ')>-1;
+    c.style.display=on?'':'none';
+  });
+});
+</script>
 </body>
 </html>
