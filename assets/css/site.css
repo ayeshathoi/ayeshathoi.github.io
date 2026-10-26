@@ -136,3 +136,6 @@ nav.top{flex-wrap:nowrap;justify-content:space-between;gap:12px}
 .fig img,.fig.v img{width:100%;height:auto;aspect-ratio:16/9}
 .fig span{overflow-wrap:anywhere}
 @media (max-width:520px){.fig{font-size:.72rem}.figs{gap:8px}}
+
+.cv{display:inline-flex;align-items:center;gap:8px}
+.cv svg{width:16px;height:16px;fill:currentColor;flex:none}
