@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayesha Binte Mostofa | PhD Student, UMass Amherst</title>
+<meta name="description" content="Ayesha Binte Mostofa is a PhD student in Computer Science at UMass Amherst working on usable security and privacy, access control, and agentic AI.">
+<link rel="icon" href="assets/img/Profile Pictures/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfbfa; --surface:#ffffff; --text:#1c1f24; --muted:#5b6370; --line:#e4e6ea;
+  --accent:#1f4e8c; --accent-soft:#e8eff8; --tag:#f0f2f5;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#101317; --surface:#161a20; --text:#e6e8eb; --muted:#9aa3af; --line:#272c34;
+         --accent:#7fb0ee; --accent-soft:#1a2535; --tag:#1d222a; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.25;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:48px 24px 72px;display:grid;grid-template-columns:260px 1fr;gap:56px}
+aside{position:sticky;top:40px;align-self:start}
+.photo{width:160px;height:160px;border-radius:50%;object-fit:cover;border:1px solid var(--line);display:block}
+aside h1{font-size:1.65rem;margin:20px 0 4px}
+.role{color:var(--muted);font-size:.95rem;margin:0 0 4px}
+.advisor{color:var(--muted);font-size:.9rem;margin:0 0 20px}
+.links{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.93rem}
+.links a{display:inline-flex;align-items:center;gap:10px;color:var(--text)}
+.links a:hover{color:var(--accent);text-decoration:none}
+.links svg{width:18px;height:18px;fill:currentColor;flex:none;color:var(--muted)}
+.cv{display:inline-block;margin-top:20px;padding:8px 16px;border:1px solid var(--accent);border-radius:6px;font-weight:500;font-size:.93rem}
+.cv:hover{background:var(--accent);color:var(--bg);text-decoration:none}
+nav.top{display:flex;flex-wrap:wrap;gap:6px 20px;margin-bottom:36px;padding-bottom:14px;border-bottom:1px solid var(--line);font-size:.92rem}
+nav.top a{color:var(--muted);font-weight:500}
+nav.top a:hover{color:var(--accent);text-decoration:none}
+section{margin-bottom:44px;scroll-margin-top:24px}
+section>h2{font-size:1.35rem;margin-bottom:16px}
+p{margin:0 0 12px}
+.news{list-style:none;padding:0;margin:0}
+.news li{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:6px 0}
+.news time{color:var(--muted);font-size:.9rem;font-variant-numeric:tabular-nums}
+.themes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.card h3{font-size:1.02rem;margin-bottom:6px;font-family:Inter,system-ui,sans-serif;font-weight:600}
+.card p{color:var(--muted);font-size:.93rem;margin:0}
+.item{padding:14px 0;border-top:1px solid var(--line)}
+.item:first-of-type{border-top:0;padding-top:0}
+.item h3{font-size:1.02rem;font-family:Inter,system-ui,sans-serif;font-weight:600}
+.meta{color:var(--muted);font-size:.9rem;margin:2px 0 6px}
+.item p{margin:0 0 6px;font-size:.96rem}
+.badge{display:inline-block;font-size:.74rem;font-weight:600;letter-spacing:.02em;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-right:6px;vertical-align:1px}
+.badge.plain{background:var(--tag);color:var(--muted)}
+.pub{display:grid;grid-template-columns:64px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.pub:first-of-type{border-top:0;padding-top:0}
+.pub .yr{color:var(--muted);font-size:.9rem;font-variant-numeric:tabular-nums;padding-top:2px}
+.pub .t{font-weight:600}
+.pub .au{color:var(--muted);font-size:.92rem;margin-top:2px}
+.pub .au b{color:var(--text);font-weight:600}
+.pub .v{font-size:.92rem;margin-top:4px}
+.row{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:8px 0;border-top:1px solid var(--line);font-size:.96rem}
+.row:first-of-type{border-top:0}
+.row .d{color:var(--muted);font-size:.9rem}
+.row small{color:var(--muted);display:block}
+footer{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:.88rem}
+@media (max-width:860px){
+  .wrap{grid-template-columns:1fr;gap:28px;padding:32px 20px 56px}
+  aside{position:static;display:grid;grid-template-columns:auto 1fr;gap:4px 20px;align-items:center}
+  aside .photo{grid-row:span 3;width:112px;height:112px}
+  aside h1{margin:0}
+  aside .links,aside .cv{grid-column:1 / -1}
+  .links{grid-template-columns:1fr 1fr}
+  .themes{grid-template-columns:1fr}
+  .news li,.pub,.row{grid-template-columns:1fr;gap:2px}
+}
+@media print{aside{position:static}.cv,nav.top{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<aside>
+  <img class="photo" src="assets/img/Profile%20Pictures/Profile_Picture.jpg" alt="Portrait of Ayesha Binte Mostofa">
+  <h1>Ayesha Binte Mostofa</h1>
+  <p class="role">PhD Student, Computer Science<br>University of Massachusetts Amherst</p>
+  <p class="advisor">Advisor: <a href="https://people.cs.umass.edu/~pdatta/">Dr. Pubali Datta</a></p>
+  <ul class="links">
+    <li><a href="mailto:amostofa@umass.edu"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7L4.5 7v1.2L12 13l7.5-4.8V7L12 12z"/></svg>amostofa@umass.edu</a></li>
+    <li><a href="https://scholar.google.com/citations?hl=en&user=6Hwk6jcAAAAJ"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v4L12 21l7-3.8v-4L12 17l-7-3.8z"/></svg>Google Scholar</a></li>
+    <li><a href="https://github.com/ayeshathoi"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/ayesha-binte-mostofa/"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a></li>
+  </ul>
+  <a class="cv" href="files/Academic_Resume_Ayesha_2026.pdf">Academic CV (PDF)</a>
+</aside>
+
+<main>
+<nav class="top" aria-label="Sections">
+  <a href="#about">About</a><a href="#news">News</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#honors">Honors</a><a href="#service">Talks &amp; Service</a><a href="#projects">Projects</a>
+</nav>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I am a first-year Ph.D. student in Computer Science at the <a href="https://www.cics.umass.edu/">University of Massachusetts Amherst</a>, in the Security Research Group, advised by <a href="https://people.cs.umass.edu/~pdatta/">Dr. Pubali Datta</a>. My research addresses security and privacy challenges in software systems and online platforms, with a focus on cloud and network systems security, usable security and privacy, and agentic AI.</p>
+  <p>I pursue two complementary directions: (1) scalable and robust methods for securing large-scale systems, including AI-assisted approaches for analyzing, generating, and enforcing security policies; and (2) human-centered studies of security and privacy on online platforms, to support safer decision-making.</p>
+  <p>I received my B.Sc. in Computer Science and Engineering from the Bangladesh University of Engineering and Technology (BUET) in 2024, and then worked as a lecturer before joining UMass Amherst in Fall 2025.</p>
+</section>
+
+<section id="news">
+  <h2>News</h2>
+  <ul class="news">
+    <li><time>Jul 2026</time><span>Poster accepted to the <b>USENIX Security '26</b> poster session. Received travel grants for USENIX Security '26 and the GREPSEC VII workshop in Baltimore.</span></li>
+    <li><time>Jun 2026</time><span>Attended Brown Systems Week '26 at Brown University.</span></li>
+    <li><time>May 2026</time><span>Paper accepted to the <b>Symposium on Usable Privacy and Security (SOUPS) 2026</b> (acceptance rate 16.2%).</span></li>
+    <li><time>Mar 2026</time><span>Poster at New England Security Day (NESD) 2026, UMass Amherst.</span></li>
+    <li><time>Feb 2026</time><span>Short talk at the Annual Boston Security Usable Research Day (ABSURD) 2026, Tufts University.</span></li>
+    <li><time>Sep 2025</time><span>Joined UMass Amherst as a Ph.D. student.</span></li>
+  </ul>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <div class="themes">
+    <div class="card"><h3>Securing systems with AI</h3><p>Using LLMs to generate, validate, and repair access control policies, and studying authorization for agentic AI systems.</p></div>
+    <div class="card"><h3>Usable security and privacy</h3><p>Large-scale and mixed-methods studies of scams, synthetic media, and app privacy on the platforms students use.</p></div>
+  </div>
+
+  <div class="item">
+    <h3>Reparo: Synthesizing and Validating Access Control Policies</h3>
+    <div class="meta"><span class="badge">First author</span><span class="badge plain">Under review at a top-tier conference</span></div>
+    <p>A multi-LLM framework that generates, validates, and repairs access control policies in Cedar, OpenFGA, and Rego from repository artifacts. Evaluated on 228 real-world repositories.</p>
+  </div>
+  <div class="item">
+    <h3>Scams Among U.S. College Students</h3>
+    <div class="meta"><span class="badge">First author</span><span class="badge plain">Under review at a top-tier conference</span></div>
+    <p>LLM-assisted analysis of 26K+ posts across 83 college subreddits to characterize student scam experiences, harms, and responses. A follow-up survey and interview study on scams targeting international workers in the U.S. is in design.</p>
+  </div>
+  <div class="item">
+    <h3>Understanding Synthetic Politics on Reddit</h3>
+    <div class="meta"><span class="badge">First author</span><span class="badge plain">USENIX Security '26 poster</span></div>
+    <p>A mixed-methods study of how political deepfakes spread and how communities react to them in r/politics and r/futurology.</p>
+  </div>
+  <div class="item">
+    <h3>Privacy of Student-Used Apps and Authorization for Agentic AI</h3>
+    <div class="meta"><span class="badge">First author</span><span class="badge plain">Ongoing</span></div>
+    <p>Measuring the privacy practices of 50+ apps used by students, and exploring Cedar-based authorization for agentic AI systems.</p>
+  </div>
+  <div class="item">
+    <h3>Undergraduate research (BUET)</h3>
+    <p>LLM-based code review and refinement using call-graph metadata and QLoRA fine-tuning, advised by Dr. Anindya Iqbal and Dr. Toufique Ahmed. Detection of attack behavior in DARPA OPTC and TC E3 logs using provenance graphs, advised by Dr. Shohrab Hossain and Dr. Shahrear Iqbal.</p>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <div class="pub"><div class="yr">2026</div><div>
+    <div class="t">Quantifying Risk Perception and Scam Response Among International and Domestic U.S. University Students</div>
+    <div class="au">A. X. Li, E. Bouma-Sims, L. Klucinec, R. Liu, <b>A. B. Mostofa</b>, A. Arunasalam, L. F. Cranor, P. Datta, L. Simko, K. Sowon</div>
+    <div class="v"><span class="badge">SOUPS 2026</span> Acceptance rate 16.2%</div></div></div>
+  <div class="pub"><div class="yr">2026</div><div>
+    <div class="t">Reparo: Synthesizing and Validating Access Control Policies</div>
+    <div class="au"><b>A. B. Mostofa</b>, G. Zhang, S. Stern, J. Zhai, P. Datta</div>
+    <div class="v"><span class="badge plain">Under review at a top-tier conference</span></div></div></div>
+  <div class="pub"><div class="yr">2026</div><div>
+    <div class="t">Characterizing Scam Experiences, Harms, and Responses Among U.S. College Students</div>
+    <div class="au"><b>A. B. Mostofa</b>, K. Fatima, A. A. Kamath, A. Arunasalam, P. Datta</div>
+    <div class="v"><span class="badge plain">Under review at a top-tier conference</span></div></div></div>
+  <div class="pub"><div class="yr">2026</div><div>
+    <div class="t">Understanding Synthetic Politics on Reddit: Spread and Community Reactions to Political Deepfakes</div>
+    <div class="au"><b>A. B. Mostofa</b>, P. Datta</div>
+    <div class="v"><span class="badge">USENIX Security '26</span> Poster</div></div></div>
+  <div class="pub"><div class="yr">2024</div><div>
+    <div class="t">Advancing Code Review and Code Refinement Automation Using LLMs</div>
+    <div class="au"><b>A. B. Mostofa</b>*, S. S. B. Mosaddek*, A. Haider*, T. Ahmed, A. Iqbal (*equal contribution)</div>
+    <div class="v"><a href="https://arxiv.org/abs/2411.10129">Preprint</a> &middot; <a href="files/posters/NSysS_Student_Poster_LLM_Thesis.pdf">NSysS 2023 poster</a></div></div></div>
+</section>
+
+<section id="experience">
+  <h2>Experience and Education</h2>
+  <div class="row"><div class="d">2025 &ndash; present</div><div><b>Ph.D. in Computer Science</b>, University of Massachusetts Amherst<small>Research Assistant (Summer and Fall 2026); Teaching Assistant for COMPSCI 250 and COMPSCI 220 (Fall 2025, Spring 2026)</small></div></div>
+  <div class="row"><div class="d">2024 &ndash; 2025</div><div><b>Full-time Lecturer</b>, Presidency University and Canadian University of Bangladesh<small>Taught courses in programming, computer graphics, machine learning, and numerical analysis</small></div></div>
+  <div class="row"><div class="d">2023</div><div><b>Machine Learning Intern</b>, Red.Digital Limited (remote)<small>Contributed to an Android app for client-side verification of National ID card images, using Android Studio, OpenCV, and TensorFlow Lite</small></div></div>
+  <div class="row"><div class="d">2019 &ndash; 2024</div><div><b>B.Sc. in Computer Science and Engineering</b>, BUET<small>CGPA 3.63/4.00; thesis advised by Dr. Anindya Iqbal</small></div></div>
+</section>
+
+<section id="honors">
+  <h2>Honors and Awards</h2>
+  <div class="row"><div class="d">2026</div><div><b>David W. Stemple Scholarship in Computing</b>, UMass Amherst ($2,300)</div></div>
+  <div class="row"><div class="d">2026</div><div><b>USENIX Security Symposium Travel Grant</b> ($825)</div></div>
+  <div class="row"><div class="d">2026</div><div><b>GREPSEC VII Workshop</b>: 1 of 48 participants selected internationally; travel grant ($1,175)</div></div>
+  <div class="row"><div class="d">2023 &ndash; 2024</div><div><b>RISE-BUET Research Grant</b> for undergraduate thesis; <b>Dean's List</b>, BUET (Levels 3 and 4)</div></div>
+</section>
+
+<section id="service">
+  <h2>Talks and Service</h2>
+  <div class="row"><div class="d">2026</div><div><b>External reviewer</b>, IEEE Transactions on Dependable and Secure Computing (TDSC)</div></div>
+  <div class="row"><div class="d">2026</div><div>Short talk, Annual Boston Security Usable Research Day (Tufts University)</div></div>
+  <div class="row"><div class="d">2026</div><div>Poster presenter and volunteer, New England Security Day (UMass Amherst)</div></div>
+  <div class="row"><div class="d">2026</div><div>Poster presenter, GREPSEC VII workshop</div></div>
+</section>
+
+<section id="projects">
+  <h2>Selected Projects</h2>
+  <div class="item"><h3><a href="https://github.com/ayeshathoi/LLMComp">LLMComp</a></h3><p>Prompt compression as a defense against LLM jailbreaks in monolingual and multilingual settings, extending SecurityLingua.</p></div>
+  <div class="item"><h3><a href="https://github.com/ayeshathoi/IAC-eval-Replication">IaC-Eval replication and extension</a></h3><p>Extended the IaC-Eval benchmark to 458 AWS Terraform scenarios across six difficulty levels, studying correctness, security, and compliance of LLM-generated infrastructure code.</p></div>
+  <div class="item"><h3><a href="https://github.com/ayeshathoi/umass-cics250-regex-game">Regular Expression Game</a></h3><p>A gamified web application for learning regular expressions, designed for use in COMPSCI 250 at UMass Amherst.</p></div>
+  <div class="item"><h3><a href="https://github.com/ayeshathoi/CS682-Project/tree/second_branch">Deep Learning Network Steganography</a></h3><p>Hiding a complete neural network inside another network while preserving the performance of both.</p></div>
+  <p class="meta" style="margin-top:12px">Earlier coursework and undergraduate projects are on the <a href="legacy.html">previous version of this site</a>.</p>
+</section>
+
+<footer>&copy; 2026 Ayesha Binte Mostofa &middot; Amherst, MA, USA</footer>
+</main>
+</div>
+</body>
+</html>
