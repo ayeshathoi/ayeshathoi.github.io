@@ -14,10 +14,10 @@
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 "Times New Roman",Times,"Liberation Serif","Nimbus Roman",serif;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
-h1,h2,h3{font-family:"Times New Roman",Times,"Liberation Serif","Nimbus Roman",serif;line-height:1.25;margin:0}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.25;margin:0}
 .wrap{max-width:1080px;margin:0 auto;padding:48px 24px 72px;display:grid;grid-template-columns:260px 1fr;gap:56px}
 aside{position:sticky;top:40px;align-self:start}
 .photo{width:160px;height:160px;border-radius:50%;object-fit:cover;border:1px solid var(--line);display:block}
@@ -41,11 +41,11 @@ p{margin:0 0 12px}
 .news time{color:var(--muted);font-size:.9rem;font-variant-numeric:tabular-nums}
 .themes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
-.card h3{font-size:1.02rem;margin-bottom:6px;font-family:"Times New Roman",Times,"Liberation Serif","Nimbus Roman",serif;font-weight:600}
+.card h3{font-size:1.02rem;margin-bottom:6px;font-family:Inter,system-ui,sans-serif;font-weight:600}
 .card p{color:var(--muted);font-size:.93rem;margin:0}
 .item{padding:14px 0;border-top:1px solid var(--line)}
 .item:first-of-type{border-top:0;padding-top:0}
-.item h3{font-size:1.02rem;font-family:"Times New Roman",Times,"Liberation Serif","Nimbus Roman",serif;font-weight:600}
+.item h3{font-size:1.02rem;font-family:Inter,system-ui,sans-serif;font-weight:600}
 .meta{color:var(--muted);font-size:.9rem;margin:2px 0 6px}
 .item p{margin:0 0 6px;font-size:.96rem}
 .badge{display:inline-block;font-size:.74rem;font-weight:600;letter-spacing:.02em;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-right:6px;vertical-align:1px}
@@ -78,7 +78,7 @@ footer{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font
 .pcard{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
 .pcard img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#fff;border-bottom:1px solid var(--line);display:block}
 .pcard .b{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
-.pcard h3{font-family:"Times New Roman",Times,"Liberation Serif","Nimbus Roman",serif;font-size:.98rem;font-weight:600;line-height:1.35}
+.pcard h3{font-family:Inter,system-ui,sans-serif;font-size:.98rem;font-weight:600;line-height:1.35}
 .pcard p{font-size:.88rem;color:var(--muted);margin:0}
 .pcard .tech{font-size:.78rem;color:var(--accent)}
 .pcard .lk{margin-top:auto;font-size:.88rem;display:flex;gap:12px;flex-wrap:wrap}
@@ -94,7 +94,7 @@ details li{margin:2px 0}
 .back{display:inline-block;margin-bottom:24px;font-size:.92rem}
 
 
-.sub{font-family:"Times New Roman",Times,"Liberation Serif","Nimbus Roman",serif;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:22px 0 10px}
+.sub{font-family:Inter,system-ui,sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:22px 0 10px}
 #beyond .sub:first-of-type{margin-top:0}
 .interests{margin-bottom:0}
 .interests .card p{font-size:.92rem}
@@ -139,6 +139,3 @@ nav.top{flex-wrap:nowrap;justify-content:space-between;gap:12px}
 
 .cv{display:inline-flex;align-items:center;gap:8px}
 .cv svg{width:16px;height:16px;fill:currentColor;flex:none}
-
-body,button,input{font-family:"Times New Roman",Times,"Liberation Serif","Nimbus Roman",serif}
-h1,h2,h3{font-weight:700}
