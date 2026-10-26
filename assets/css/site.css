@@ -129,3 +129,10 @@ nav.top{flex-wrap:nowrap;justify-content:space-between;gap:12px}
 .figcap{margin-top:6px;font-size:.8rem}
 
 .fig.v{width:176px}.fig.v img{width:176px;height:99px}
+
+/* examples: always one line */
+.figs{flex-wrap:nowrap;gap:12px}
+.fig,.fig.v{flex:1 1 0;min-width:0;width:auto;max-width:176px}
+.fig img,.fig.v img{width:100%;height:auto;aspect-ratio:16/9}
+.fig span{overflow-wrap:anywhere}
+@media (max-width:520px){.fig{font-size:.72rem}.figs{gap:8px}}
